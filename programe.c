@@ -8,12 +8,12 @@ int main()
   int i;
   char a[100];
   char b[100];
-  char e[100];
+  char c[100];
   char d[100];  
-  char f[100];
+  char e[100];
   char g[100];
   FILE *fp;
-  char c;
+  char z;
   
   
   
@@ -21,20 +21,20 @@ int main()
   
   for(i=0;;i++)
   {
-	  c = getc(fp);
-	  if(c == '\n')
+	  z = getc(fp);
+	  if(z == '\n')
 		break;
-	  a[i] = c;
+	  a[i] = z;
   }
   a[i] = '\0';
   
     
   for(i=0;;i++)
   {
-	  c = getc(fp);
-	  if(c == '\n')
+	  z = getc(fp);
+	  if(z == '\n')
 		break;
-	  b[i] = c;
+	  b[i] = z;
   }
   b[i] = '\0';
   
@@ -42,21 +42,21 @@ int main()
   
   for(i=0;;i++)
   {
-	  c = getc(fp);
-	  if(c == '\n')
+	  z = getc(fp);
+	  if(z == '\n')
 		break;
-	  e[i] = c;
+	  c[i] = z;
   }
-  e[i] = '\0';
+  c[i] = '\0';
   
   
   
   for(i=0;;i++)
   {
-	  c = getc(fp);
-	  if(c == '\n')
+	  z = getc(fp);
+	  if(z == '\n')
 		break;
-	  d[i] = c;
+	  d[i] = z;
   }
   d[i] = '\0';
   
@@ -64,12 +64,12 @@ int main()
   
   for(i=0;;i++)
   {
-	  c = getc(fp);
-	  if(c == '\n')
+	  z = getc(fp);
+	  if(z == '\n')
 		break;
-	  f[i] = c;
+	  e[i] = z;
   }
-  f[i] = '\0';
+  e[i] = '\0';
   
   
   fclose(fp);
@@ -77,15 +77,15 @@ int main()
   
   printf("\n%s",a);
   printf("\n%s",b);
-  printf("\n%s",e);
+  printf("\n%s",c);
   printf("\n%s",d);
-  printf("\n%s",f);
+  printf("\n%s",e);
   
   
   printf("\nEnter ur answer:");
   scanf("%s",g);
   
-  if(strcmp(g,f)==0)
+  if(strcmp(g,e)==0)
   printf("\nCorrect answer");
   else
   printf("\nsorry.try again");
